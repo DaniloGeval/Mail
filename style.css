@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+}
+.input__text {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+input[type="text"], textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.center {
+  text-align: center;
+}
+.button__input {
+    background: linear-gradient(to right, rgb(45, 145, 58), rgb(124, 118, 65));
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+.button__input:hover {
+  background-color: #45a049;
+}
+input[type="reset"] {
+    background: linear-gradient(to right, rgb(0, 128, 255), rgb(255, 0, 128));
+}
+input[type="reset"]:hover {
+  background: linear-gradient(rgb(122, 89, 89),(rgb(56, 68, 56)),(rgb(88, 83, 92)));
+}

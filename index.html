@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Mail form</h1>
+        <form name="mailer" method="post" action="" enctype="text/plain" onsubmit="return checkIt()">
+            <table>
+                <tr>
+                    <td><label for="name" class="input__text">Ім'я:</label></td>
+                    <td><input type="text" id="name" name="Name" size="24" onchange="msg(this.form)"></td>
+                </tr>
+                <tr>
+                    <td><label for="subject" class="input__text">Тема:</label></td>
+                    <td><input type="text" id="subject" name="Subject" size="24" onchange="msg(this.form)"></td>
+                </tr>
+                <tr>
+                    <td><label for="message" class="input__text">Повідомлення:</label></td>
+                    <td><textarea id="message" name="Message" cols="40" rows="6" onchange="msg(this.form)"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="center">
+                        <input type="submit" value="Відправити" onclick="return checkIt()" class="button__input">
+                        
+                        <input type="reset" value="Очистити"  class="button__input">
+                    </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
